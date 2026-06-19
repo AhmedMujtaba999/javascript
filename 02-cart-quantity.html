@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- // use modern html5 doctype -->
+<html>
+<!-- represents the entire the webpage -->
+
+    <head>
+    <!-- // contains information about the page (webpage), everything not visible on the webpage is inside this tag -->
+        <title>Cart Quantity</title>
+        <!-- // the title of the webpage, it is shown in the browser tab -->
+            <style>
+        
+            </style>
+
+
+    </head>
+
+    <body>
+      
+       <p> Cart Quantity</p>
+       <button onclick="console.log(`Cart Quantity: ${count}`)"> Show Quantity</button>
+       <button
+       onclick="count ++; console.log(`Cart Quantity: ${count}`)"
+       >Add to Cart</button>
+       <button
+       onclick="count += 2; console.log(`Cart Quantity: ${count}`)"
+       > + 2</button>
+       <button
+        onclick="count += 3;  console.log(`Cart Quantity: ${count}`)"> + 3</button>
+       <button
+        onclick="count = 0; console.log('Cart was reset.'); console.log(`Cart Quantity: ${count}`)"
+       > Reset Cart</button>
+
+
+    <!-- // it is suppose to contain everything that is visible on the webpage -->
+        <script>
+            let count = 0;
+        </script>
+    </body>
+
+</html>
