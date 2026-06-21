@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- // use modern html5 doctype -->
+<html>
+<!-- represents the entire the webpage -->
+
+    <head>
+    <!-- // contains information about the page (webpage), everything not visible on the webpage is inside this tag -->
+        <title>Booleans</title>
+        <!-- // the title of the webpage, it is shown in the browser tab -->
+            <style>
+        
+            </style>
+
+
+    </head>
+
+    <body>
+      
+
+
+    <!-- // it is suppose to contain everything that is visible on the webpage -->
+        <script>
+         
+        true 
+        false
+        console.log(3 < 5);
+        console.log(typeof true );
+        console.log( 5 == '5.00');
+        console.log(5 === '5.00');
+
+        if( true)
+        {
+            console.log('this is true');
+        }
+        if( false){
+            console.log('this is false');
+        }else{
+            console.log('else statement');
+        }
+        if( 17 >= 18){
+            console.log('you can drive');
+        } else if ( 17 >= 16){
+            console.log('almost drive');
+        }
+        
+        else{
+            console.log('you cannot drive');
+        }
+     const cardQuantity = 5;
+     let empty = '';
+     if ( cardQuantity){
+        console.log('cart has products');
+     }
+     console.log(!0);
+     console.log(!1);
+     console.log(!'');
+     console.log('text'/ 5); // this will print NaN in the console not a number 
+
+     let var1;
+     console.log(var1);// this will print undefined in the console because var1 is not assigned a value
+      false && console.log('hello'); // this will not print anything in the console because the first operand is false
+      const message = false && 'hello';
+        console.log(message); // this will print false in the console because the first operand is false 
+        // it is also called as Guard operator because it guards the second operand from being evaluated if the first operand is false
+        true && console.log('hello'); // this will print 'hello' in the console because the first operand is true
+        const message1 = true && 'hello';   
+        const currency = 'EUR' || 'USD'; // this will store 'EUR' in the variable currency because the first operand is truthy
+        console.log(currency); // this will print 'EUR' in the console
+        const currency1 = '' || 'USD'; // this will store 'USD' in the variable currency1 because the first operand is falsy
+        console.log(currency1); // this will print 'USD' in the console
+        const currency2 = undefined || 'USD'; // this will store 'USD' in the variable currency2 because the first operand is falsy
+        console.log(currency2); // this will print 'USD' in the console
+        </script>
+    </body>
+
+</html>
