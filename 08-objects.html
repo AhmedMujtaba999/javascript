@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- // use modern html5 doctype -->
+<html>
+<!-- represents the entire the webpage -->
+
+<head>
+    <!-- // contains information about the page (webpage), everything not visible on the webpage is inside this tag -->
+    <title>Objects</title>
+    <!-- // the title of the webpage, it is shown in the browser tab -->
+    <style>
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- // it is suppose to contain everything that is visible on the webpage -->
+    <script>
+        /*
+       const product ={
+        name : 'socks',
+        price : 1090
+       }; // this is an object 
+       console.log(product);
+       console.log(product.name);
+       console.log(product.price);
+       product.name ='cotton socks'
+
+       console.log(product);
+       product.newproperty = true;
+       console.log(product);
+       delete product.newproperty;// DELETING NEW PROPERTY
+       console.log(typeof product);
+       */
+
+       const product2 ={
+        name: 'shirt',
+      'delivery-time' : '1 day',
+      rating: {
+        stars: 4.5,
+        count: 87
+      },
+      fun: function function1() {
+        console.log('function inside an object');
+      }
+
+       };
+       console.log(product2);
+       console.log(product2.name);
+       console.log(product2['name']);  
+       console.log(product2['delivery-time']);     // bracket notation              
+       console.log(product2.rating.count);
+        product2.fun(); // calling a function
+        console.log( typeof console.log); 
+
+        console.log(JSON.stringify(product2)); // convert javascript object to json 
+        const jsonstring= JSON.stringify(product2);
+      console.log( JSON.parse(jsonstring));
+
+
+    </script>
+
+</body>
+
+</html>
