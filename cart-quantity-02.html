@@ -14,10 +14,11 @@
     <button onclick="
       if (count + 1 > 10) {
         alert('The cart is full');
-      } else {
+        return; 
+      } 
         count++;
         console.log(`Cart Quantity: ${count}`);
-      }
+      
     ">
       Add to Cart
     </button>
@@ -25,10 +26,11 @@
     <button onclick="
       if (count + 2 > 10) {
         alert('The cart is full');
-      } else {
+        return;
+      } 
         count += 2;
         console.log(`Cart Quantity: ${count}`);
-      }
+      
     ">
       +2
     </button>
@@ -36,10 +38,11 @@
     <button onclick="
       if (count + 3 > 10) {
         alert('The cart is full');
-      } else {
+        return;
+      } 
         count += 3;
         console.log(`Cart Quantity: ${count}`);
-      }
+      
     ">
       +3
     </button>
@@ -47,10 +50,11 @@
     <button onclick="
       if (count + 4 > 10) {
         alert('The cart is full');
-      } else {
+        return;
+      } 
         count += 4;
         console.log(`Cart Quantity: ${count}`);
-      }
+      
     ">
       +4
     </button>
@@ -58,10 +62,11 @@
     <button onclick="
       if (count + 5 > 10) {
         alert('The cart is full');
-      } else {
+        return;
+      } 
         count += 5;
         console.log(`Cart Quantity: ${count}`);
-      }
+      
     ">
       +5
     </button>
@@ -69,10 +74,11 @@
     <button onclick="
       if (count - 1 < 0) {
         alert('Not Enough Items in the Cart');
-      } else {
+        return;
+      } 
         count--;
         console.log(`Cart Quantity: ${count}`);
-      }
+      
     ">
       Remove from Cart
     </button>
@@ -80,10 +86,11 @@
     <button onclick="
       if (count - 2 < 0) {
         alert('Not Enough Items in the Cart');
-      } else {
+        return;
+      }
         count -= 2;
         console.log(`Cart Quantity: ${count}`);
-      }
+      
     ">
       -2
     </button>
@@ -91,10 +98,11 @@
     <button onclick="
       if (count - 3 < 0) {
         alert('Not Enough Items in the Cart');
-      } else {
+        return;
+      } 
         count -= 3;
         console.log(`Cart Quantity: ${count}`);
-      }
+      
     ">
       -3
     </button>
