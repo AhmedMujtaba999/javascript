@@ -25,17 +25,31 @@
     score.wins = 0;
     score.losses =0;
     score.ties =0;
+    localStorage.removeItem('score');
     ">Reset Score</button>
 
     <p> <a href="rock-paper1.html" class="link-style">Click here</a> to see the final project </p>
 
     <!-- // it is suppose to contain everything that is visible on the webpage -->
     <script>
-        const score ={
+        //loading page
+        let score =JSON.parse(localStorage.getItem('score')) || {
             wins: 0,
             losses: 0,
             ties: 0
-        };
+        };// getting a item from localstorage and again converting it to object. and setting a default value
+    
+
+
+    //    if(!score){ // if score is null keep a default value of score 
+    //  if score === null ==> true, ---> same as !score ==> true
+    //     score ={
+    //         wins: 0,
+    //         losses: 0,
+    //         ties: 0
+    //     };
+    //    } 
+        
 
         function playGame(playerMove) {
             const computerMove = pickComputerMove();
@@ -84,6 +98,8 @@
             } else if(result === 'Tie'){
                 score.ties +=1;
             }
+
+         localStorage.setItem('score', JSON.stringify(score));
 
             alert(`Your move: ${playerMove}. Computer move: ${computerMove}. Result: ${result}\nWins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
         }
