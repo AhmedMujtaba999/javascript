@@ -34,7 +34,7 @@
        delete product.newproperty;// DELETING NEW PROPERTY
        console.log(typeof product);
        */
-
+/*
        const product2 ={
         name: 'shirt',
       'delivery-time' : '1 day',
@@ -58,9 +58,63 @@
         console.log(JSON.stringify(product2)); // convert javascript object to json 
         const jsonstring= JSON.stringify(product2);
       console.log( JSON.parse(jsonstring));
+*/
+
+console.log('hello'.length);
+console.log('hello'.toUpperCase());
+
+const object1 ={ // just get references of actual property 
+  message: 'hello'
+};
+const object2= object1 ; // does not make copy of object1 it just make copy of references pointing to the property  also called as copy as references 
+
+object1.message =' good job!';
+
+console.log(object1);
+console.log(object2);
+
+const object3 = {
+  message: 'good job!'
+};
+
+console.log(object3 === object1); // comapres the reference not values returns ---> false
+console.log(object1 === object2); // compares references and points to same address so returns---> true
+console.log(object1.message === object2.message); //comapres values using dot notation
+console.log(object1.message === object3.message);// returns false cause reference is not same 
+console.log(object1.message == object2.message); // returns true cause compares only value not reference
+
+const object4 = {
+  message: 'good job!',
+  price : 799
+};
+
+//const message = object4.message; // use to save or make copy of values 
+// if variable name and object property is same then short cut is --->
+const {message, price} = object4; // destructuring 
+// it will take the message property from object4 and make a copy in variable message
+console.log(message);
+console.log(price);
+
+
+const object5= {
+ // message : message // if property and variable name is same then we have short cut for it 
+  message, 
+  // method: function function1(){
+  //   console.log('method');
+  // }
+
+  method() {
+    console.log('method');
+  }
+};
+console.log(object5);
+
+object5.method();
+
 
 
     </script>
+
 
 </body>
 
