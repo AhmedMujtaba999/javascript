@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>DOM</title>
+    </head>
+    <body>
+        <button>hello</button>
+        <button  class="js-btn"> 2nd btn</button> 
+        <button id="ahmed"> 3rd btn</button>
+        <script>
+
+        //     console.log(document.title);
+        //     document.title ='changed'; // linked with the website 
+        //    console.log( document.body );
+        //    console.log(typeof document.body);
+           
+        // console.log(   document.body.innerHTML ) ; // controls the all the html inside the body
+        // document.body.innerHTML = '<button>good job</button>'; // all the html will get changed to text and elements ...
+
+        console.log(document.querySelector('button').innerHTML);
+            document.querySelector('button')
+              .innerHTML = 'changed!'; // this will change the html inside the button
+            // 2nd button 
+            document.querySelector('.js-btn').innerHTML = 'yaahooo!';
+            document.querySelector('#ahmed').innerHTML = 'Changed-to-Ali';
+
+            const buttonElement = document.querySelector('.js-btn');
+            console.log(buttonElement);
+            
+
+        </script>
+    </body>
+</html>
