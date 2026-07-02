@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>09h-exercise</title>
+</head>
+<body>
+    <input class="js-text" placeholder="Type anything" onkeyup="
+        handleKeyup();
+        " >
+        <p class="js-display-text"></p>
+    <script>
+         function handleKeyup(){
+         const inputelem= document.querySelector('.js-text').value;
+            document.querySelector('.js-display-text').innerHTML= `${inputelem}`;
+         }
+
+    </script>
+</body>
+</html>
