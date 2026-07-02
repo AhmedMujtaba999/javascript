@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- // use modern html5 doctype -->
+<html>
+<!-- represents the entire the webpage -->
+
+<head>
+    <!-- // contains information about the page (webpage), everything not visible on the webpage is inside this tag -->
+    <title>Cart Quantity</title>
+    <!-- // the title of the webpage, it is shown in the browser tab -->
+    <style>
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <p> Cart Quantity</p>
+    <button onclick="  displayQuantity(countstorage)"> Show Quantity</button>
+    <button onclick="countstorage ++; displayQuantity(countstorage)">Add to Cart</button>
+    <button onclick="countstorage += 2; displayQuantity(countstorage)"> + 2</button>
+    <button onclick="countstorage += 3;  displayQuantity(countstorage)">
+        + 3</button>
+    <button onclick="countstorage += 4; displayQuantity(countstorage)"> + 4</button>
+    <button onclick="countstorage += 5; displayQuantity(countstorage)"> + 5</button>
+    <button onclick="countstorage--; displayQuantity(countstorage)">
+        Remove from Cart
+    </button>
+    <button onclick="countstorage -= 2; displayQuantity(countstorage)">
+        -2
+    </button>
+    <button onclick="countstorage -= 3; displayQuantity(countstorage)">
+        -3
+    </button>
+    <button onclick="countstorage = 0; resetCard(); "> Reset Cart</button>
+
+    <p class="js-display-quantity"></p>
+    <!-- // it is suppose to contain everything that is visible on the webpage -->
+    <script>
+        let countstorage = JSON.parse(localStorage.getItem('cardquantity')) || 0;
+        document.querySelector('.js-display-quantity').innerHTML = `Card Quantity: ${countstorage}`;
+        // let count = 0;
+
+        function resetCard() {
+            document.querySelector('.js-display-quantity').innerHTML = 'Card was reset';
+            localStorage.setItem('cardquantity', JSON.stringify(countstorage));
+        }
+
+        function displayQuantity(count) {
+            document.querySelector('.js-display-quantity').innerHTML = `Card Quantity: ${count}`;
+            // console.log(JSON.stringify(count));
+            localStorage.setItem('cardquantity', JSON.stringify(count));
+        }
+
+    </script>
+</body>
+
+</html>
