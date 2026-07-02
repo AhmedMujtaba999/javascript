@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Cart Quantity-06</title>
-  </head>
 
-  <body>
-    <p>Cart Quantity</p>
+<head>
+  <title>Cart Quantity-06</title>
+</head>
 
-    <button onclick="console.log(`Cart Quantity: ${count}`)">
-      Show Quantity
-    </button>
+<body>
+  <p>Cart Quantity</p>
 
-    <button onclick="
+  <button onclick="console.log(`Cart Quantity: ${count}`)">
+    Show Quantity
+  </button>
+
+  <button onclick="
       if (count + 1 > 10) {
         alert('The cart is full');
         return; 
@@ -20,10 +21,10 @@
         console.log(`Cart Quantity: ${count}`);
       
     ">
-      Add to Cart
-    </button>
+    Add to Cart
+  </button>
 
-    <button onclick="
+  <button onclick="
       if (count + 2 > 10) {
         alert('The cart is full');
         return;
@@ -32,10 +33,10 @@
         console.log(`Cart Quantity: ${count}`);
       
     ">
-      +2
-    </button>
+    +2
+  </button>
 
-    <button onclick="
+  <button onclick="
       if (count + 3 > 10) {
         alert('The cart is full');
         return;
@@ -44,10 +45,10 @@
         console.log(`Cart Quantity: ${count}`);
       
     ">
-      +3
-    </button>
+    +3
+  </button>
 
-    <button onclick="
+  <button onclick="
       if (count + 4 > 10) {
         alert('The cart is full');
         return;
@@ -56,10 +57,10 @@
         console.log(`Cart Quantity: ${count}`);
       
     ">
-      +4
-    </button>
+    +4
+  </button>
 
-    <button onclick="
+  <button onclick="
       if (count + 5 > 10) {
         alert('The cart is full');
         return;
@@ -68,10 +69,10 @@
         console.log(`Cart Quantity: ${count}`);
       
     ">
-      +5
-    </button>
+    +5
+  </button>
 
-    <button onclick="
+  <button onclick="
       if (count - 1 < 0) {
         alert('Not Enough Items in the Cart');
         return;
@@ -80,10 +81,10 @@
         console.log(`Cart Quantity: ${count}`);
       
     ">
-      Remove from Cart
-    </button>
+    Remove from Cart
+  </button>
 
-    <button onclick="
+  <button onclick="
       if (count - 2 < 0) {
         alert('Not Enough Items in the Cart');
         return;
@@ -92,10 +93,10 @@
         console.log(`Cart Quantity: ${count}`);
       
     ">
-      -2
-    </button>
+    -2
+  </button>
 
-    <button onclick="
+  <button onclick="
       if (count - 3 < 0) {
         alert('Not Enough Items in the Cart');
         return;
@@ -104,19 +105,20 @@
         console.log(`Cart Quantity: ${count}`);
       
     ">
-      -3
-    </button>
+    -3
+  </button>
 
-    <button onclick="
+  <button onclick="
       count = 0;
       console.log('Cart was reset.');
       console.log(`Cart Quantity: ${count}`);
     ">
-      Reset Cart
-    </button>
+    Reset Cart
+  </button>
 
-    <script>
-      let count = 0;
-    </script>
-  </body>
+  <script>
+    let count = 0;
+  </script>
+</body>
+
 </html>
