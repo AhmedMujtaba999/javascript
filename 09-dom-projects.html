@@ -40,14 +40,14 @@
         }
         function calculatetotal() {
             const inputElement = document.querySelector('.js-cost-input');
-            let cost = Number(inputElement.value); // value will be in string format so convert it to number using Number() function
+            let cost = Number(inputElement.value)*100; // value will be in string format so convert it to number using Number() function
             // console.log(typeof cost);
-            if (cost < 40) {
-                cost += 10;
+            if (cost < 4000) {
+                cost += 1000;
                 //console.log(cost);
 
             }
-            document.querySelector('.js-total-cost').innerHTML = `Total cost: $${cost}`;
+            document.querySelector('.js-total-cost').innerHTML = `Total cost: $${(cost / 100)}`;
         }
         function subscibe() {
             const buttonElement = document.querySelector('.js-subscribe-btn');
