@@ -1,0 +1,36 @@
+  body{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+        .btn{
+            background-color: rgba(126, 143, 163, 0.774);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color:white;
+            border: none;
+            margin: 3px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 60%;
+        }
+
+        .opr{
+            
+            background-color: rgba(223, 176, 23, 0.712);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color:white;
+            border: none;
+            margin: 3px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 60%;
+        }
+        .text-calculator{
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 25px;
+        }
