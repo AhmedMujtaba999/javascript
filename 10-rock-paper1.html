@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- // use modern html5 doctype -->
+<html>
+<!-- represents the entire the webpage -->
+
+<head>
+    <!-- // contains information about the page (webpage), everything not visible on the webpage is inside this tag -->
+    <title>Rock Paper Scissors</title>
+    <!-- // the title of the webpage, it is shown in the browser tab -->
+    <!-- <style>
+        this we dont use when we have a separate css file, we use this when we want to write css inside the html file
+    </style> -->
+    <link rel="stylesheet" href="styles/10-rock-paper-scissors.css">
+    <!-- link is a void element, rel= relation-> the type of file we are loading ex. css, href= which file to load it also supports file path -->
+    <!-- we can use multiple link elements to load different css files -->
+</head>
+
+<body>
+    <p class="title"> Rock Paper Scissors</p>
+    <button onclick="playGame('Rock');" class="move-btn">
+        <img src="images/rock-emoji.png" class="move-icon"></button>
+    <button onclick="playGame('Paper');" class="move-btn">
+        <img src="images/paper-emoji.png" class="move-icon"></button>
+    <button onclick="playGame('Scissor');" class="move-btn">
+        <img src="images/scissor-emoji.png" class="move-icon"></button>
+    <p class="js-result result"></p>
+    <p class="js-moves">
+        <!-- You 
+        <img src="images/rock-emoji.png" class="move-icon">
+        <img src="images/paper-emoji.png" class="move-icon">
+        Computer -->
+    </p>
+    <p class="js-score score"></p>
+    <button onclick="
+    score.wins = 0;
+    score.losses =0;
+    score.ties =0;
+    localStorage.removeItem('score');
+    updateScoreElement();
+    " class="reset-btn">Reset Score</button>
+    <!-- // it is suppose to contain everything that is visible on the webpage -->
+    <script src="scripts/10-rock-paper-scissors.js">
+    </script>
+    <!-- we can use multiple scripts files one after the other and it will work exactly the same -->
+</body>
+
+</html>
