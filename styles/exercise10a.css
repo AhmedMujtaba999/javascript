@@ -1,0 +1,33 @@
+.amazon-btn {
+    background-color: rgb(255,216,20);
+    border: none;
+    color: black;
+    width: 180px;
+    height: 35px;
+    margin: 4px 2px;
+    padding: 10px 24px;
+    border-radius: 45px;
+}
+.request-btn {
+    background-color: black;
+    border: none;
+    font-weight: bold;
+    color: white;
+    width: 140px;
+    height: 35px;
+    margin: 4px 2px;
+    padding: 10px 24px;
+    border-radius: 5px;
+}
+
+.schedule-btn {
+    background-color: rgb(230,230,230);
+    border: none;
+    color: black;
+    font-weight: bold;
+    width: 180px;
+    height: 35px;
+    margin: 4px 2px;
+    padding: 10px 24px;
+    border-radius: 5px;
+}
