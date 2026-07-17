@@ -3,14 +3,18 @@
 
 <head>
     <title>Todo-list</title>
+    <link rel="stylesheet" href="styles/11-todo-list.css">
 </head>
 
 
 <body>
     <p>TODO-LIST</p>
-    <input placeholder="Todo name" class="js-name-input" onkeydown="handleEvent(event);">
-    <button onclick="addTodo();">Add</button>
-    <div class="js-todo-list"></div>
+    <div class="todo-input-grid">
+        <input placeholder="Todo name" class="js-name-input name-input" onkeydown="handleEvent(event);">
+        <input type="date" class="js-duedate-input duedate-input">
+        <button onclick="addTodo();" class="add-todo-btn">Add</button>
+    </div>
+    <div class="js-todo-list todo-grid"></div>
     <script src="scripts/11-todo-list.js"></script>
 </body>
 
