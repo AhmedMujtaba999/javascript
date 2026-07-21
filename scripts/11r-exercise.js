@@ -1,11 +1,16 @@
 function removeEgg(foods) {
     let array = [];
+    let count = 0;
     for (let i = 0; i < foods.length; i++) {
         if (foods[i] === 'egg') {
+            count++;
+            if (count === 3) {
+                array.push(foods[i]);
+            }
             continue;
-        }else{
-        array.push(foods[i]);
         }
+        array.push(foods[i]);
+
     }
     return array;
 }
