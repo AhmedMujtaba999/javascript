@@ -1,10 +1,12 @@
+const foods= ['egg', 'apple', 'egg', 'egg', 'ham']
 function removeEgg(foods) {
     let array = [];
     let count = 0;
+    //let copy= foods.reverse().slice();
     for (let i = 0; i < foods.length; i++) {
         if (foods[i] === 'egg') {
             count++;
-            if (count === 3) {
+            if (count === 1) {
                 array.push(foods[i]);
             }
             continue;
@@ -15,4 +17,5 @@ function removeEgg(foods) {
     return array;
 }
 
-console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+console.log(removeEgg(foods));
+console.log(foods);
