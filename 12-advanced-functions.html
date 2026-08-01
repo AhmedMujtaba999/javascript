@@ -30,6 +30,7 @@
             console.log('hello3'); // giving function as a parameter value;
         });
         */
+       /*
        setTimeout(function(){
         console.log('timeout');
        }, 3000);
@@ -41,6 +42,19 @@
        }, 3000);
 
        console.log('next line 2');
+       */
+      [
+        'make dinner',
+        'wash dishes',
+        'watch js'
+      ].forEach(function(value,index){
+        if(value==='wash dishes'){
+            return; // does the same thing as continue 
+        }
+        console.log(index);
+        console.log(value);
+      }
+    );
     </script>
 </body>
 
